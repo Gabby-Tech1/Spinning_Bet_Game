@@ -43,18 +43,18 @@ const getNumberOfLines = () => {
   }
 };
 
-// const getBet = (balance, lines) => {
-//   while (true) {
-//     const bet = prompt("Enter the bet per line: ");
-//     const numberBet = parseFloat(bet);
+const getBet = (balance, lines) => {
+  while (true) {
+    const bet = prompt("Enter the bet per line: ");
+    const numberBet = parseFloat(bet);
 
-//     if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {
-//       console.log("Invalid Bet, Try again!!");
-//     } else {
-//       return numberBet;
-//     }
-//   }
-// };
+    if (isNaN(numberBet) || numberBet <= 0 || numberBet > balance / lines) {
+      console.log("Invalid Bet, Try again!!");
+    } else {
+      return numberBet;
+    }
+  }
+};
 
 // const spin = () => {
 //   const symbols = [];
