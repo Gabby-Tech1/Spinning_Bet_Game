@@ -30,18 +30,18 @@ const deposit = () => {
   }
 };
 
-// const getNumberOfLines = () => {
-//   while (true) {
-//     const lines = prompt("Enter the number of lines to bet on (1 - 3): ");
-//     const numberOfLines = parseFloat(lines);
+const getNumberOfLines = () => {
+  while (true) {
+    const lines = prompt("Enter the number of lines to bet on (1 - 3): ");
+    const numberOfLines = parseFloat(lines);
 
-//     if (isNaN(numberOfLines) || numberOfLines <= 0 || numberOfLines > 3) {
-//       console.log("Invalid Number of Lines, Try again!!");
-//     } else {
-//       return numberOfLines;
-//     }
-//   }
-// };
+    if (isNaN(numberOfLines) || numberOfLines <= 0 || numberOfLines > 3) {
+      console.log("Invalid Number of Lines, Try again!!");
+    } else {
+      return numberOfLines;
+    }
+  }
+};
 
 // const getBet = (balance, lines) => {
 //   while (true) {
